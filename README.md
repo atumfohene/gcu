@@ -1,0 +1,46 @@
+    --theme-color: #017F7B;
+    --theme-color2: #FCD374;
+    --theme-color3: #FCD374;
+    --title-color: #003130;
+    --body-color: #4d5765;
+    --smoke-color: #f3f7fb;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --light-color: #72849b;
+    --yellow-color: #ffb539;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --border-color: #ecf1f9;
+    --title-font: "Jost", sans-serif;
+    --body-font: "Gabarito", sans-serif;
+    --icon-font: "Font Awesome 6 Pro";
+    --main-container: 1380px;
+    --container-gutters: 24px;
+    --section-space: 60px;
+    --section-space-mobile: 40px;
+    --section-title-space: 70px;
+    --ripple-ani-duration: 5s;
+}
+
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: sys

@@ -13,12 +13,12 @@ import Paper3 from "./pages/papers/Paper3";
 function App() {
   const location = useLocation();
 
-  // Don't show the footer on the Home page
+  // Hide Header and Footer on Home page
   const isHomePage = location.pathname === "/";
 
   return (
     <div className="app">
-      <Header />
+      {!isHomePage && <Header />}
 
       <main>
         <Routes>

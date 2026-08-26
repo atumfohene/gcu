@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 
 function App() {
@@ -23,10 +23,7 @@ function App() {
   };
 
 
-  const socialIcon = {
-    fontSize: "20px",
-    color: "#002147"
-  };
+  
 
 
   return (

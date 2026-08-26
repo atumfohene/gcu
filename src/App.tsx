@@ -1,5 +1,4 @@
-
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,6 +11,11 @@ import Paper2 from "./pages/papers/Paper2";
 import Paper3 from "./pages/papers/Paper3";
 
 function App() {
+  const location = useLocation();
+
+  // Don't show the footer on the Home page
+  const isHomePage = location.pathname === "/";
+
   return (
     <div className="app">
       <Header />
@@ -28,40 +32,9 @@ function App() {
         </Routes>
       </main>
 
-      <Footer />
+      {!isHomePage && <Footer />}
     </div>
   );
 }
 
 export default App;
-
-
-
-// import React from "react";
-
-// function App() {
-//   return (
-//     <div
-//       style={{
-//         width: "100%",
-//         height: "100vh",
-//         margin: 0,
-//         padding: 0,
-//         overflow: "hidden",
-//       }}
-//     >
-//       <iframe
-//         src="https://gcu.edu.gh/footer"
-//         title="Garden City University Website"
-//         style={{
-//           width: "100%",
-//           height: "100%",
-//           border: "none",
-//           display: "block",
-//         }}
-//       />
-//     </div>
-//   );
-// }
-
-// export default App;

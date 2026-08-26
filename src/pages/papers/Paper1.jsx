@@ -9,15 +9,58 @@ import {
   FaLinkedinIn,
   FaTwitter
 } from "react-icons/fa";
+import gcuLogo from "../../assets/gcu_logo.png";
+
 
 function Paper1() {
 
   return (
-    <article className="article-page">
+    <article
+      className="article-page"
+      style={{
+        position: "relative",
+      }}
+    >
+
+      <img
+  src={gcuLogo}
+  alt="Garden City University"
+  style={{
+    width: "250px",
+    height: "100px",
+    objectFit: "contain",
+    
+    marginRight:-174,
+    marginTop:-43,
+  }}
+/>
+
+      {/* =========================================
+          TOP LEFT UNIVERSITY IMAGE
+      ========================================= */}
+
+      <div
+        style={{
+          position: "absolute",
+          top: "20px",
+          left: "20px",
+          zIndex: 10,
+        }}
+      >
+
+      </div>
+
+
+      {/* =========================================
+          ARTICLE CONTAINER
+      ========================================= */}
 
       <div className="article-container">
 
-        {/* ARTICLE HEADER */}
+
+        {/* =========================================
+            ARTICLE HEADER
+        ========================================= */}
 
         <div className="article-header">
 
@@ -26,14 +69,18 @@ function Paper1() {
             className="back-link"
           >
             <FaArrowLeft />
-            Back to Journal
+          
           </Link>
 
+
+          {/* ARTICLE TYPE */}
 
           <div className="article-type">
             RESEARCH ARTICLE
           </div>
 
+
+          {/* ARTICLE TITLE */}
 
           <h1>
             Exploring Kidney Disease in Captive
@@ -41,6 +88,8 @@ function Paper1() {
             and the Role of SDMA and Blood Biomarkers
           </h1>
 
+
+          {/* AUTHORS */}
 
           <div className="article-authors">
 
@@ -55,6 +104,8 @@ function Paper1() {
 
           </div>
 
+
+          {/* ARTICLE METADATA */}
 
           <div className="article-metadata">
 
@@ -81,6 +132,8 @@ function Paper1() {
           </div>
 
 
+          {/* ARTICLE ACTIONS */}
+
           <div className="article-actions">
 
             <button className="article-pdf-button">
@@ -88,10 +141,14 @@ function Paper1() {
               View PDF
             </button>
 
+
             <button className="citation-button">
               <FaQuoteRight />
               Cite Article
             </button>
+
+
+            {/* SHARE BUTTONS */}
 
             <div className="share-buttons">
 
@@ -114,13 +171,16 @@ function Paper1() {
         </div>
 
 
-        {/* ABSTRACT */}
+        {/* =========================================
+            ABSTRACT
+        ========================================= */}
 
         <section className="abstract-section">
 
           <h2>
             Abstract
           </h2>
+
 
           <p>
             Kidney disease represents an important health
@@ -132,12 +192,16 @@ function Paper1() {
             renal function.
           </p>
 
+
           <p>
             The research evaluates blood-based indicators
             and considers their potential value for the
             early detection and monitoring of kidney
             disease in captive populations.
           </p>
+
+
+          {/* KEYWORDS */}
 
           <div className="keywords">
 
@@ -170,13 +234,19 @@ function Paper1() {
         </section>
 
 
-        {/* ARTICLE BODY */}
+        {/* =========================================
+            ARTICLE BODY
+        ========================================= */}
 
         <div className="article-body">
+
+
+          {/* INTRODUCTION */}
 
           <h2>
             1. Introduction
           </h2>
+
 
           <p>
             The cheetah is one of the world's most
@@ -186,6 +256,7 @@ function Paper1() {
             is an essential component of long-term
             conservation efforts.
           </p>
+
 
           <p>
             Among the health challenges affecting captive
@@ -197,9 +268,12 @@ function Paper1() {
           </p>
 
 
+          {/* BACKGROUND */}
+
           <h2>
             2. Background
           </h2>
+
 
           <p>
             Kidney function is essential for maintaining
@@ -207,6 +281,7 @@ function Paper1() {
             regulating electrolytes, and supporting
             physiological stability.
           </p>
+
 
           <p>
             In captive wildlife, regular monitoring of
@@ -216,15 +291,19 @@ function Paper1() {
           </p>
 
 
+          {/* METHODOLOGY */}
+
           <h2>
             3. Methodology
           </h2>
+
 
           <p>
             The study used a case-study approach to examine
             blood-based biomarkers associated with renal
             function in captive cheetahs in Namibia.
           </p>
+
 
           <p>
             Blood samples were evaluated using established
@@ -233,9 +312,12 @@ function Paper1() {
           </p>
 
 
+          {/* RESULTS */}
+
           <h2>
             4. Results
           </h2>
+
 
           <p>
             The findings indicate that biomarker analysis
@@ -246,15 +328,19 @@ function Paper1() {
           </p>
 
 
+          {/* DISCUSSION */}
+
           <h2>
             5. Discussion
           </h2>
+
 
           <p>
             Early identification of kidney dysfunction may
             improve clinical decision-making and support
             better management of captive cheetahs.
           </p>
+
 
           <p>
             The findings also highlight the importance of
@@ -264,9 +350,12 @@ function Paper1() {
           </p>
 
 
+          {/* CONCLUSION */}
+
           <h2>
             6. Conclusion
           </h2>
+
 
           <p>
             This case study demonstrates the potential
@@ -279,9 +368,12 @@ function Paper1() {
           </p>
 
 
+          {/* REFERENCES */}
+
           <h2>
             References
           </h2>
+
 
           <ol className="references">
 
@@ -291,11 +383,13 @@ function Paper1() {
               2024.
             </li>
 
+
             <li>
               Example Author. Biomarkers of renal function
               in mammals. Veterinary Research.
               2023.
             </li>
+
 
             <li>
               Example Author. Conservation medicine and
@@ -308,16 +402,21 @@ function Paper1() {
         </div>
 
 
-        {/* ARTICLE FOOTER */}
+        {/* =========================================
+            ARTICLE FOOTER
+        ========================================= */}
 
         <div className="article-footer">
 
-          <Link to="/archives">
+          <a
+            href="https://gcu.edu.gh/portals/student/"
+          >
             <FaArrowLeft />
             Back to Archives
-          </Link>
+          </a>
 
         </div>
+
 
       </div>
 

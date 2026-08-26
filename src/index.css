@@ -35,7 +35,7 @@ a {
 }
 
 .app {
-   background:#2a8685;
+ background-color: #017F7B;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -52,17 +52,16 @@ main {
 
 .site-header {
   width: 100%;
-  background: #2a8685;
+   background: #017F7B; 
   color: #ffffff;
   /* border-bottom: 4px solid #c5a24a; */
 }
 
 .header-inner {
 
-  border-bottom-right-radius: 80px;
-  background: #cf1d1d;
+  background: #017F7B;
 
-  width: 80%;
+  width: 100%;
   max-width: 1400px;
 
   margin: 0 auto;
@@ -100,7 +99,7 @@ main {
 }
 
 .brand-text {
-  line-height: 1.2;
+  line-height: 0.8;
 }
 
 .brand-name {
@@ -310,7 +309,7 @@ main {
 
   font-weight: 500;
 
-  color: #002147;
+  color: #456d55;
 }
 
 .view-archive-link {
@@ -767,9 +766,9 @@ main {
 }
 
 .article-header h1 {
-  color: #002147;
+  color: #456d55;
 
-  font-size: clamp(34px, 5vw, 55px);
+  font-size: clamp(30px, 5vw, 50px);
 
   line-height: 1.2;
 
@@ -847,7 +846,7 @@ main {
 }
 
 .article-pdf-button {
-  background: #002147;
+  background: #456d55;
 
   color: #ffffff;
 }
@@ -910,7 +909,7 @@ main {
   margin:
     0 0 15px;
 
-  color: #002147;
+  color: #456d55;
 
   font-size: 24px;
 
@@ -932,6 +931,7 @@ main {
   align-items: center;
 
   flex-wrap: wrap;
+  
 
   gap: 8px;
 
@@ -943,7 +943,7 @@ main {
 .keywords strong {
   margin-right: 5px;
 
-  color: #002147;
+  color: #456d55;
 }
 
 .keywords span {
@@ -972,7 +972,7 @@ main {
 }
 
 .article-body h2 {
-  color: #002147;
+  color: #456d55;
 
   font-size: 28px;
 

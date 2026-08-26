@@ -1,0 +1,566 @@
+.gcu-footer {
+  width: 100%;
+  background:  #053d3b;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   CONTACT BAR
+========================================= */
+
+.gcu-contact-bar {
+  width: 100%;
+  min-height: 100px;
+
+  background: #053d3b;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px 7%;
+
+  box-sizing: border-box;
+}
+
+
+.gcu-contact-item {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+
+  width: 33.333%;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  min-height: 75px;
+}
+
+
+.gcu-contact-item:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+
+.gcu-contact-item:nth-child(2) {
+  padding-left: 8%;
+}
+
+
+.gcu-contact-item:nth-child(3) {
+  padding-left: 8%;
+}
+
+
+.gcu-contact-icon {
+  width: 58px;
+  height: 58px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: rgba(74, 180, 174, 0.32);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+
+  box-shadow:
+    8px 8px 0 rgba(92, 198, 191, 0.16);
+}
+
+
+.gcu-contact-label {
+  display: block;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  margin-bottom: 8px;
+
+  opacity: 0.9;
+}
+
+
+.gcu-contact-item strong {
+  display: block;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.gcu-footer-main {
+  width: 100%;
+  box-sizing: border-box;
+
+  background-color: #064846;
+
+  background-image:
+    radial-gradient(
+      rgba(231, 201, 92, 0.10) 0.9px,
+      transparent 0.9px
+    ),
+    radial-gradient(
+      rgba(255, 255, 255, 0.045) 1px,
+      transparent 1px
+    );
+
+  background-size: 8px 8px, 12px 12px;
+  background-position: 0 0, 4px 6px;
+
+  padding: 55px 5% 0;
+
+  border-radius: 22px;
+  margin: 23px 0 0;
+}
+
+
+  .gcu-logo-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+/* .gcu-logo {
+  width: 400px;
+  max-width: 90%;
+
+  height: auto;
+
+  display: block;
+} */
+
+.gcu-logo {
+  width: 450px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+
+
+/* =========================================
+   SOCIAL MEDIA
+========================================= */
+
+.gcu-social-section {
+  text-align: center;
+
+  margin-bottom: 65px;
+}
+
+
+.gcu-social-section h3 {
+  margin: 0 0 18px;
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+}
+
+
+.gcu-social-icons {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.gcu-social-icons a {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 50, 48, 0.42);
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.gcu-social-icons a:hover {
+  transform: translateY(-4px);
+
+  background: #ffffff;
+
+  color: #07504e;
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.gcu-footer-links {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1.05fr
+    1.5fr
+    1fr
+    1fr;
+
+  column-gap: 55px;
+
+  padding-bottom: 75px;
+}
+
+
+.gcu-link-column h3 {
+  margin: 0;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   SMALL GOLD TITLE LINES
+========================================= */
+
+.gcu-heading-line {
+  display: flex;
+
+  align-items: center;
+
+  gap: 3px;
+
+  margin-top: 12px;
+
+  margin-bottom: 25px;
+}
+
+
+.gcu-heading-line span {
+  height: 3px;
+
+  background: #e7c95c;
+
+  display: block;
+}
+
+
+.gcu-heading-line span:nth-child(1) {
+  width: 45px;
+}
+
+
+.gcu-heading-line span:nth-child(2) {
+  width: 9px;
+}
+
+
+.gcu-heading-line span:nth-child(3) {
+  width: 9px;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.gcu-link-column ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.gcu-link-column li {
+  position: relative;
+
+  padding-left: 13px;
+
+  margin-bottom: 14px;
+}
+
+
+.gcu-link-column li::before {
+  content: "•";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  color: #ffffff;
+
+  font-size: 13px;
+}
+
+
+.gcu-link-column a {
+  color: rgba(255, 255, 255, 0.78);
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  line-height: 1.45;
+
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+
+.gcu-link-column a:hover {
+  color: #ffffff;
+
+  padding-left: 4px;
+}
+
+
+/* =========================================
+   BOTTOM FOOTER
+========================================= */
+
+.gcu-footer-bottom {
+  border-top: 1px solid #d6a23a;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.gcu-copyright-brand {
+  color: #d4a83f;
+  font-weight: 700;
+}
+
+.gcu-footer-bottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+.gcu-bottom-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 35px;
+}
+
+
+.gcu-bottom-links a {
+  color: rgba(255, 255, 255, 0.7);
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: color 0.2s ease;
+}
+
+
+.gcu-bottom-links a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .gcu-footer-links {
+    grid-template-columns: repeat(3, 1fr);
+
+    row-gap: 50px;
+  }
+
+  .gcu-contact-bar {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .gcu-contact-bar {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    padding: 35px 25px;
+  }
+
+
+  .gcu-contact-item {
+    width: 100%;
+
+    border-right: none !important;
+
+    padding-left: 0 !important;
+
+    min-height: auto;
+  }
+
+
+  .gcu-contact-item strong {
+    font-size: 17px;
+  }
+
+
+  .gcu-footer-main {
+    padding: 45px 25px 0;
+  }
+
+
+  .gcu-logo-container {
+ width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+
+  .gcu-logo {
+  width: 450px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+  .gcu-footer-links {
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 30px;
+
+    row-gap: 50px;
+
+    padding-bottom: 55px;
+  }
+
+
+  .gcu-link-column h3 {
+    font-size: 19px;
+  }
+
+
+  .gcu-link-column a {
+    font-size: 14px;
+  }
+
+
+  .gcu-footer-bottom {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    padding: 25px 0;
+
+    gap: 18px;
+  }
+
+
+  .gcu-bottom-links {
+    gap: 20px;
+
+    flex-wrap: wrap;
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+  .gcu-footer-links {
+    grid-template-columns: 1fr;
+  }
+
+
+  .gcu-contact-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+
+  .gcu-contact-label {
+    font-size: 13px;
+  }
+
+
+  .gcu-contact-item strong {
+    font-size: 16px;
+  }
+
+
+  .gcu-social-section h3 {
+    font-size: 17px;
+  }
+
+
+  .gcu-social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+
+}

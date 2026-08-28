@@ -22,18 +22,27 @@ function Paper1() {
       }}
     >
 
-      <img
-  src={gcuLogo}
-  alt="Garden City University"
+<div
   style={{
-    width: "250px",
-    height: "100px",
-    objectFit: "contain",
-    
-    marginRight:-174,
-    marginTop:-43,
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "5px",
+    marginBottom: "0px",
   }}
-/>
+>
+  <img
+    src={gcuLogo}
+    alt="Garden City University"
+    style={{
+     width: "750px",
+  height: "120px",
+  objectFit: "contain",
+  display: "block",
+    }}
+  />
+</div>
 
       {/* =========================================
           TOP LEFT UNIVERSITY IMAGE
@@ -409,7 +418,7 @@ function Paper1() {
         <div className="article-footer">
 
           <a
-            href="https://gcu.edu.gh/portals/student/"
+            href="https://gcu.edu.gh/"
           >
             <FaArrowLeft />
             Back to Archives

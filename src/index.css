@@ -768,7 +768,7 @@ main {
 .article-header h1 {
   color: #456d55;
 
-  font-size: clamp(30px, 5vw, 50px);
+  font-size: clamp(30px, 5vw, 35px);
 
   line-height: 1.2;
 

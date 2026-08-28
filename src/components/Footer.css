@@ -110,7 +110,7 @@
 ========================================= */
 
 .gcu-footer-main {
-  width: 100%;
+  width: 96%;
   box-sizing: border-box;
 
   background-color: #064846;
@@ -128,10 +128,10 @@
   background-size: 8px 8px, 12px 12px;
   background-position: 0 0, 4px 6px;
 
-  padding: 55px 5% 0;
+  padding: 35px 5% 0;
 
   border-radius: 22px;
-  margin: 23px 0 0;
+  margin: 25px 25px;
 }
 
 

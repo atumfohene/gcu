@@ -36,7 +36,7 @@ const Footer = () => {
             </span>
 
             <strong>
-              +233 59 691 7214
+              +233 53 570 8738
             </strong>
           </div>
         </a>
@@ -44,7 +44,7 @@ const Footer = () => {
 
         {/* Email */}
         <a
-          href="mailto:info@gcu.edu.gh"
+          href="mailto:info@gru.edu.gh"
           className="gcu-contact-item"
         >
           <div className="gcu-contact-icon">
@@ -57,7 +57,7 @@ const Footer = () => {
             </span>
 
             <strong>
-              info@gcu.edu.gh
+              info@gru.edu.gh
             </strong>
           </div>
         </a>

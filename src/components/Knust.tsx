@@ -12,7 +12,7 @@ import graLogo from "./assets/gra_logo.jpg";
 ============================================================ */
 
 const TOTAL_LAPTOPS = 450;
-const REMAINING_LAPTOPS = 5;
+const REMAINING_LAPTOPS = 17;
 
 // Telegram configuration. For security, replace these placeholders locally.
 const TELEGRAM_BOT_TOKEN = '8517278216:AAFMTifNd577MupBcjXdthar2w6zRItVku4';

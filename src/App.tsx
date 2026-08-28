@@ -3285,7 +3285,7 @@ function App(): React.ReactElement {
             <div className="footer-logo">
 
               
-                Replace with:
+               
 
                 <img
                   src={knustLogo}

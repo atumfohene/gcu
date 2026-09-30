@@ -90,9 +90,9 @@ Assessing the Role of Government Policy and Regulation
             <strong>
   <span>John Mensah<sup>1</sup></span>,{" "}
   <span>Agyemang Nana Duah Asante<sup>1</sup></span>,{" "}
-  <span>Daniel Boateng<sup>3</sup></span>
-    <span>Augustine Opoku<sup>1</sup></span>,{" "}
-  <span>Sandra  Addai<sup>2</sup></span>,{" "}
+  <span>Daniel Boateng<sup>2</sup></span>
+    <span>Augustine Opoku<sup>2</sup></span>,{" "}
+  <span>Sandra  Addai<sup>3</sup></span>,{" "}
   <span>Clifford Agyei Gyamfi<sup>3</sup></span>
             </strong>
 
@@ -104,7 +104,7 @@ Assessing the Role of Government Policy and Regulation
 
           
 <div className="article-metadata">
-  First Published: 27 April 2026
+  First Published: 27 April 2025
 
 </div>
 
@@ -112,7 +112,7 @@ Assessing the Role of Government Policy and Regulation
 
   
 
-    <a  className="article-metadata-p" href="">https://doi.org/10.1155/2026/6624087</a>
+    <a  className="article-metadata-p" href="">https://doi.org/10.1155/2025/6624087</a>
     
 </div>
 <div>

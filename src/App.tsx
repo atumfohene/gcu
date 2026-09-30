@@ -49,20 +49,20 @@ function App() {
           {/* Archives */}
           <Route path="/archives" element={<Archives />} />
 
-          {/* Research Papers */}
+          {/* Research Papers */}        
           <Route
             path="/doi/full/10.1155/2026/6624087"
             element={<Paper1 />}
           />
 
           <Route
-            path="/doi/full/10.1155/2024/7612083"
+            path="/doi/full/10.1155/2025/7612083"
 
             element={<Paper2 />}
           />
 
           <Route
-            path="/doi/full/10.1155/2024/6636088"
+            path="/doi/full/10.1155/2025/6636088"
             element={<Paper3 />}
           />
 

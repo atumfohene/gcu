@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import {
@@ -16,8 +16,76 @@ import {
 } from "react-icons/fa";
 import gcuLogo from "../../assets/gcu_logo.png";
 
+import figure11 from "../../assets/paper1/figure11.png"
+import figure2 from "../../assets/paper1/figure1.png"
+import figure3 from "../../assets/paper1/figure3.png"
+
+function Figure ({
+  src, alt, caption
+}){
+  return (
+    <figure 
+    style={
+      {
+        margin: "35px auto",
+        textAlign: "center",
+        maxWidth:"850px",
+      }
+    }
+    >
+      <img
+      src={src}
+      alt={alt}
+      style={
+        {
+          width: "100%",
+          maxWidth: "400px",
+          height:"auto",
+          display: "block",
+          margin:"0 auto",
+        
+        }
+      }/>
+
+      {
+        caption && (
+          <figcaption
+          style ={{
+            marginTop: "10px",
+            fontSize: "14px",
+            lineHeight: "1.5",
+            color:"#555",
+
+          }}
+          >
+            {caption}
+          </figcaption>
+        )
+      }
+
+    </figure>
+  )
+}
+
+
 
 function Paper1() {
+
+    const [citationVisible, setCitationVisible] = useState(false);
+
+  const citation = `Asante, A. N. D. (2026). Knowledge of AI use and prediction of AI adoption among selected residents in the greater Kumasi area of Ghana. Volume 2026, Issue 1, 1–12. https://doi.org/10.1155/2026/6624087`;
+
+  const copyCitation = async () => {
+    try {
+      await navigator.clipboard.writeText(citation);
+      alert("Citation copied to clipboard!");
+    } catch (error) {
+      console.error("Failed to copy citation:", error);
+    }
+  };
+
+
+  const [pdfVisible, setPdfVisible] = useState(false);
 
   return (
     <article
@@ -171,16 +239,29 @@ greater Kumasi area of Ghana
 
           <div className="article-actions">
 
-            <button className="article-pdf-button">
-              <FaFilePdf />
-              View PDF
-            </button>
+<button
+  className="article-pdf-button"
+  onClick={() => setPdfVisible(true)}
+>
+  <FaFilePdf />
+  View PDF
+</button>
 
+
+<button
+  className="citation-button"
+  onClick={() => setCitationVisible(true)}
+>
+  <FaQuoteRight />
+  Cite
+</button>
 
             <button className="citation-button">
               <FaUnlock/>
               Open Access
             </button>
+
+
 
 
             {/* SHARE BUTTONS */}
@@ -215,6 +296,8 @@ greater Kumasi area of Ghana
           <h2>
             Abstract
           </h2>
+
+
 
 
           <p>
@@ -363,7 +446,6 @@ factors, including the perceived usefulness and the perceived ease of use of a t
 intelligence.
           </p>
 
-
           <p>
         Studies on AI adoption across various sectors, though emerging, demonstrate that 
 knowledge and awareness of AI are determinants of the adoption of AI technologies. A 
@@ -388,6 +470,13 @@ the high knowledge and awareness of AI, Holmes et al. have highlighted the impor
 vein, Pflanzer et al.focus attention on the value alignment in AI systems, stressing 
 that AI technologies must reflect fairness, inclusiveness, and human dignity.
           </p>
+
+{/* 
+<Figure 
+src={figure111}
+alt="All is well"
+caption="Figure11 is a caption"
+/> */}
 
 
 <p>
@@ -950,6 +1039,116 @@ issemination_details.php?disseminatereport=MjYzOTE0MjAuMzc2NQ==&Publications#.
 
 
       </div>
+
+      {citationVisible && (
+  <div
+    className="citation-modal-overlay"
+    onClick={() => setCitationVisible(false)}
+  >
+    <div
+      className="citation-modal"
+      onClick={(e) => e.stopPropagation()}
+    >
+
+      <div className="citation-modal-header">
+        <h2>Cite this article</h2>
+
+        <button
+          className="citation-close-button"
+          onClick={() => setCitationVisible(false)}
+          aria-label="Close citation modal"
+        >
+          ×
+        </button>
+      </div>
+
+      <p className="citation-modal-description">
+        Copy the citation below and paste it into your document,
+        reference list, or bibliography.
+      </p>
+
+      <div className="citation-box">
+        {citation}
+      </div>
+
+      <div className="citation-modal-actions">
+
+        <button
+          className="citation-copy-button"
+          onClick={copyCitation}
+        >
+          <FaQuoteRight />
+          Copy Citation
+        </button>
+
+        <button
+          className="citation-cancel-button"
+          onClick={() => setCitationVisible(false)}
+        >
+          Close
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    {pdfVisible && (
+  <div
+    className="pdf-modal-overlay"
+    onClick={() => setPdfVisible(false)}
+  >
+    <div
+      className="pdf-modal"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <div className="pdf-modal-header">
+        <div className="pdf-title">
+          <FaFilePdf />
+          <h2>PDF Version</h2>
+        </div>
+
+        <button
+          className="pdf-close-button"
+          onClick={() => setPdfVisible(false)}
+        >
+          ×
+        </button>
+      </div>
+
+      <div className="pdf-preview">
+        <FaFilePdf className="pdf-large-icon" />
+
+        <h3>PDF version coming soon</h3>
+
+        <p>
+          The PDF version of this article will be available
+          for download soon.
+        </p>
+      </div>
+
+      <div className="pdf-modal-actions">
+        <button
+          className="pdf-download-button"
+          disabled
+        >
+          <FaFilePdf />
+          Download PDF
+        </button>
+
+        <button
+          className="pdf-cancel-button"
+          onClick={() => setPdfVisible(false)}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+  </div>
+)}
 
     </article>
   );

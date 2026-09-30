@@ -1,5 +1,5 @@
+
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -45,11 +45,11 @@ function Header() {
             }}
           >
 
-            {/* HOME */}
+            {/* STUDENTS PORTAL */}
 
-            <NavLink
-              to="/"
-              style={({ isActive }) => ({
+            <a
+              href="https://gcu.edu.gh"
+              style={{
                 color: "#ffffff",
                 textDecoration: "none",
                 fontFamily: "Arial, sans-serif",
@@ -58,11 +58,10 @@ function Header() {
                 letterSpacing: "1px",
                 padding: "0 18px",
                 whiteSpace: "nowrap",
-                opacity: isActive ? 1 : 0.9,
-              })}
+              }}
             >
               STUDENTS PORTAL
-            </NavLink>
+            </a>
 
 
             {/* DIVIDER */}
@@ -77,11 +76,11 @@ function Header() {
             />
 
 
-            {/* ARCHIVES */}
+            {/* STAFF PORTAL */}
 
-            <NavLink
-              to="/archives"
-              style={({ isActive }) => ({
+            <a
+              href="https://gcu.edu.gh"
+              style={{
                 color: "#ffffff",
                 textDecoration: "none",
                 fontFamily: "Arial, sans-serif",
@@ -90,107 +89,10 @@ function Header() {
                 letterSpacing: "1px",
                 padding: "0 18px",
                 whiteSpace: "nowrap",
-                opacity: isActive ? 1 : 0.9,
-              })}
+              }}
             >
               STAFF PORTAL
-            </NavLink>
-
-
-            {/* DIVIDER */}
-
-            <div
-              style={{
-                width: "1px",
-                height: "20px",
-                backgroundColor: "rgba(255, 255, 255, 0.45)",
-                flexShrink: 0,
-              }}
-            />
-
-
-            {/* CURRENT ISSUE */}
-
-            <NavLink
-              to="/current-issue"
-              style={({ isActive }) => ({
-                color: "#ffffff",
-                textDecoration: "none",
-                fontFamily: "Arial, sans-serif",
-                fontSize: "13px",
-                fontWeight: 600,
-                letterSpacing: "1px",
-                padding: "0 18px",
-                whiteSpace: "nowrap",
-                opacity: isActive ? 1 : 0.9,
-              })}
-            >
-              CONTACT
-            </NavLink>
-
-
-            {/* DIVIDER */}
-
-            <div
-              style={{
-                width: "1px",
-                height: "20px",
-                backgroundColor: "rgba(255, 255, 255, 0.45)",
-                flexShrink: 0,
-              }}
-            />
-
-
-            {/* ABOUT */}
-
-            <NavLink
-              to="/about"
-              style={({ isActive }) => ({
-                color: "#ffffff",
-                textDecoration: "none",
-                fontFamily: "Arial, sans-serif",
-                fontSize: "13px",
-                fontWeight: 600,
-                letterSpacing: "1px",
-                padding: "0 18px",
-                whiteSpace: "nowrap",
-                opacity: isActive ? 1 : 0.9,
-              })}
-            >
-              APPLY ONLINE
-            </NavLink>
-
-
-            {/* DIVIDER */}
-
-            <div
-              style={{
-                width: "1px",
-                height: "20px",
-                backgroundColor: "rgba(255, 255, 255, 0.45)",
-                flexShrink: 0,
-              }}
-            />
-
-
-            {/* AUTHOR GUIDELINES */}
-
-            <NavLink
-              to="/author-guidelines"
-              style={({ isActive }) => ({
-                color: "#ffffff",
-                textDecoration: "none",
-                fontFamily: "Arial, sans-serif",
-                fontSize: "13px",
-                fontWeight: 600,
-                letterSpacing: "1px",
-                padding: "0 18px",
-                whiteSpace: "nowrap",
-                opacity: isActive ? 1 : 0.9,
-              })}
-            >
-              ETHICAL CLEARANCE PORTAL
-            </NavLink>
+            </a>
 
 
             {/* DIVIDER */}
@@ -207,9 +109,102 @@ function Header() {
 
             {/* CONTACT */}
 
-            <NavLink
-              to="/contact"
-              style={({ isActive }) => ({
+            <a
+              href="https://gcu.edu.gh"
+              style={{
+                color: "#ffffff",
+                textDecoration: "none",
+                fontFamily: "Arial, sans-serif",
+                fontSize: "13px",
+                fontWeight: 600,
+                letterSpacing: "1px",
+                padding: "0 18px",
+                whiteSpace: "nowrap",
+              }}
+            >
+              CONTACT
+            </a>
+
+
+            {/* DIVIDER */}
+
+            <div
+              style={{
+                width: "1px",
+                height: "20px",
+                backgroundColor: "rgba(255, 255, 255, 0.45)",
+                flexShrink: 0,
+              }}
+            />
+
+
+            {/* APPLY ONLINE */}
+
+            <a
+              href="https://gcu.edu.gh"
+              style={{
+                color: "#ffffff",
+                textDecoration: "none",
+                fontFamily: "Arial, sans-serif",
+                fontSize: "13px",
+                fontWeight: 600,
+                letterSpacing: "1px",
+                padding: "0 18px",
+                whiteSpace: "nowrap",
+              }}
+            >
+              APPLY ONLINE
+            </a>
+
+
+            {/* DIVIDER */}
+
+            <div
+              style={{
+                width: "1px",
+                height: "20px",
+                backgroundColor: "rgba(255, 255, 255, 0.45)",
+                flexShrink: 0,
+              }}
+            />
+
+
+            {/* ETHICAL CLEARANCE PORTAL */}
+
+            <a
+              href="https://gcu.edu.gh"
+              style={{
+                color: "#ffffff",
+                textDecoration: "none",
+                fontFamily: "Arial, sans-serif",
+                fontSize: "13px",
+                fontWeight: 600,
+                letterSpacing: "1px",
+                padding: "0 18px",
+                whiteSpace: "nowrap",
+              }}
+            >
+              ETHICAL CLEARANCE PORTAL
+            </a>
+
+
+            {/* DIVIDER */}
+
+            <div
+              style={{
+                width: "1px",
+                height: "20px",
+                backgroundColor: "rgba(255, 255, 255, 0.45)",
+                flexShrink: 0,
+              }}
+            />
+
+
+            {/* GCU APPS */}
+
+            <a
+              href="https://gcu.edu.gh"
+              style={{
                 color: "#ffffff",
                 textDecoration: "none",
                 fontFamily: "Arial, sans-serif",
@@ -218,11 +213,10 @@ function Header() {
                 letterSpacing: "1px",
                 padding: "0 18px",
                 whiteSpace: "nowrap",
-                opacity: isActive ? 1 : 0.9,
-              })}
+              }}
             >
               GCU APPS
-            </NavLink>
+            </a>
 
           </nav>
 

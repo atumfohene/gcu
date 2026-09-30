@@ -178,37 +178,37 @@ const Footer = () => {
 
             <ul>
               <li>
-                <a href="/vision-mission">
+                <a  href="https://gcu.edu.gh/">
                   Vision &amp; Mission
                 </a>
               </li>
 
               <li>
-                <a href="/university-history">
+                <a  href="https://gcu.edu.gh/">
                   University History
                 </a>
               </li>
 
               <li>
-                <a href="/university-council">
+                <a href="https://gcu.edu.gh/">
                   University Council
                 </a>
               </li>
 
               <li>
-                <a href="/university-anthem">
+                <a  href="https://gcu.edu.gh/">
                   University Anthem
                 </a>
               </li>
 
               <li>
-                <a href="/map-direction">
+                <a  href="https://gcu.edu.gh/">
                   Map &amp; Direction
                 </a>
               </li>
 
               <li>
-                <a href="/founders-office">
+                <a  href="https://gcu.edu.gh/">
                   Founder's Office
                 </a>
               </li>
@@ -230,25 +230,25 @@ const Footer = () => {
 
             <ul>
               <li>
-                <a href="/entry-requirements">
+                <a  href="https://gcu.edu.gh/">
                   Entry Requirements
                 </a>
               </li>
 
               <li>
-                <a href="/undergraduate-programmes">
+                <a  href="https://gcu.edu.gh/">
                   Undergraduate Programmes
                 </a>
               </li>
 
               <li>
-                <a href="/graduate-programmes">
+                <a  href="https://gcu.edu.gh/">
                   Graduate Programmes
                 </a>
               </li>
 
               <li>
-                <a href="/international-applicants">
+                <a  href="https://gcu.edu.gh/">
                   International Applicants
                 </a>
               </li>
@@ -260,7 +260,7 @@ const Footer = () => {
               </li>
 
               <li>
-                <a href="/accommodation">
+                <a  href="https://gcu.edu.gh/">
                   Accommodation
                 </a>
               </li>
@@ -282,37 +282,37 @@ const Footer = () => {
 
             <ul>
               <li>
-                <a href="/school-business-applied-sciences">
+                <a  href="https://gcu.edu.gh/">
                   School of Business &amp; Applied Sciences
                 </a>
               </li>
 
               <li>
-                <a href="/school-graduate-studies">
+                <a  href="https://gcu.edu.gh/">
                   School of Graduate Studies &amp; Research
                 </a>
               </li>
 
               <li>
-                <a href="/school-health-allied-sciences">
+                <a  href="https://gcu.edu.gh/">
                   School of Health &amp; Allied Sciences
                 </a>
               </li>
 
               <li>
-                <a href="/codel">
+                <a  href="https://gcu.edu.gh/">
                   CODeL
                 </a>
               </li>
 
               <li>
-                <a href="/academic-calendar">
+                <a  href="https://gcu.edu.gh/">
                   Academic Calendar
                 </a>
               </li>
 
               <li>
-                <a href="/university-library">
+                <a  href="https://gcu.edu.gh/">
                   University Library
                 </a>
               </li>
@@ -334,31 +334,31 @@ const Footer = () => {
 
             <ul>
               <li>
-                <a href="/staff-documents">
+                <a  href="https://gcu.edu.gh/">
                   Staff Documents
                 </a>
               </li>
 
               <li>
-                <a href="/vacancies">
+                <a  href="https://gcu.edu.gh/">
                   Vacancies
                 </a>
               </li>
 
               <li>
-                <a href="/gcu-policies">
+                <a  href="https://gcu.edu.gh/">
                   GCU Policies
                 </a>
               </li>
 
               <li>
-                <a href="/teaching-learning-policy">
+                <a href="https://gcu.edu.gh/">
                   Teaching &amp; Learning Policy
                 </a>
               </li>
 
               <li>
-                <a href="https://mail.google.com/"
+                <a  href="https://gcu.edu.gh/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -367,7 +367,7 @@ const Footer = () => {
               </li>
 
               <li>
-                <a href="/staff-portal">
+                <a  href="https://gcu.edu.gh/">
                   Staff Portal
                 </a>
               </li>
@@ -389,37 +389,37 @@ const Footer = () => {
 
             <ul>
               <li>
-                <a href="/student-documents">
+                <a  href="https://gcu.edu.gh/">
                   Student Documents
                 </a>
               </li>
 
               <li>
-                <a href="/course-registration">
+                <a  href="https://gcu.edu.gh/">
                   Course Registration
                 </a>
               </li>
 
               <li>
-                <a href="/e-learning">
+                <a  href="https://gcu.edu.gh/">
                   E-Learning Portal
                 </a>
               </li>
 
               <li>
-                <a href="/academic-calendar">
+                <a  href="https://gcu.edu.gh/">
                   Academic Calendar
                 </a>
               </li>
 
               <li>
-                <a href="/src">
+                <a  href="https://gcu.edu.gh/">
                   SRC
                 </a>
               </li>
 
               <li>
-                <a href="/career-centre">
+                <a  href="https://gcu.edu.gh/">
                   Career Centre
                 </a>
               </li>
@@ -443,7 +443,7 @@ const Footer = () => {
 
           <div className="gcu-bottom-links">
 
-            <a href="/privacy-policy">
+            <a  href="https://gcu.edu.gh/">
               Privacy Policy
             </a>
 

@@ -1,18 +1,17 @@
----change papers/paper-1 to something meaningful
+****change papers/paper-1 to something meaningful
 
 ---anytime you want to buy email or domain from Ghana.com, change the home page from Garden CIty to something else.
 
 
 ---edit all the NavLinks and The Footer Links to corresponding site
-
---- check if you can add image within a publication
+** edit to add images in all the other pages
 
 ---always update App.tsx for header paper titles
 
----work on the 'cite' feature
+***work on the 'cite' feature
 ---the contact buttons should be mirror
 
-
+---**not strictly, but when you publish on figshare, you can copy the doi numbers and update it here
 
 
 import { useEffect } from "react";

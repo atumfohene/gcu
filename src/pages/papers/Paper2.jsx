@@ -75,8 +75,8 @@ Cocoa Plantations in Western Ghana
 
                <span> Kwame Agyeman<sup>1</sup></span>,{" "}
                 <span> Michael Anderson Owusu<sup>1</sup></span>,{" "}
-  <span>Agyemang Nana Duah Asante<sup>3</sup></span>,{" "}
-  <span> James Ntim<sup>2</sup></span>
+  <span>Agyemang Nana Duah Asante<sup>2</sup></span>,{" "}
+  <span> James Ntim<sup>3</sup></span>
             </strong>
 
             <p>
@@ -87,7 +87,7 @@ Cocoa Plantations in Western Ghana
 
           
 <div className="article-metadata">
-  First Published: 14 May 2024
+  First Published: 14 May 2025
 
 </div>
 
@@ -95,7 +95,7 @@ Cocoa Plantations in Western Ghana
 
   
 
-    <a  className="article-metadata-p" href="">https://doi.org/10.1155/2024/6624087</a>
+    <a  className="article-metadata-p" href="">https://doi.org/10.1155/2025/6624087</a>
     
 </div>
 <div>

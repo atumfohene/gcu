@@ -13,8 +13,8 @@ function Home() {
       }}
     >
       <iframe
-
-        src="https://gru.com/"
+      
+        src="https://gcu.edu.gh/"
         title="Garden City University Website"
         style={{
           width: "100%",
